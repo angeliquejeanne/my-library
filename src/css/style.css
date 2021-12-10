@@ -181,3 +181,50 @@ li .book-resume p {
     flex-direction: column;
     justify-content: center;
 }
+
+.overlay {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    background: rgba(255, 250, 250, 0.507);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 4rem auto;
+    padding: 20px;
+    background: lightgrey;
+    color: #000;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+.popup h2 {
+    margin-top: 0;
+    color: #000;
+    font-size: 2rem;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.popup .close:hover {
+    color: lime;
+}
+.popup .resume-book {
+    max-height: 35%;
+    overflow: auto;
+}
